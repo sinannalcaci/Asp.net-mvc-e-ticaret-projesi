@@ -1,0 +1,31 @@
+﻿
+@model IEnumerable<Abc.MvcWebUI.Entity.Category>
+
+
+
+<div class="list-group">
+    <ul class="mt-6 p-6">
+
+
+
+
+        <li class="list-group-item">
+            <a href="/Home/List">
+                <i class="fas fa-angle-double-right"></i>
+                Tüm Kategoriler
+            </a>
+        </li>
+    </ul>
+
+        @foreach (var item in Model)
+        {
+            <a href="/Home/List/@item.Id" class="list-group-item list-group-item-action" aria-current="true">
+                <i class="fas fa-angle-double-right"></i>
+                @item.Name
+            </a>
+        }
+    
+</div>
+
+    
+

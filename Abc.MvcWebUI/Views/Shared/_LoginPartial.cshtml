@@ -1,0 +1,33 @@
+﻿
+<div class="col-6 text-right">
+
+    <ul class="top-links account-links">
+
+        @if(Request.IsAuthenticated)
+        {
+            
+
+
+            <li><i class="fas fa-user-shield"></i> <a href="/">Benim Hesabım</a></li>
+            <li><i class="fa fa-power-off"></i> <a href="/">@User.Identity.Name</a></li>
+            <li><i class="fas fa-sign-out-alt"></i> <a href="/Account/Logout">Çıkış</a></li>
+        
+         }
+
+         else
+         {
+        
+
+        
+            <li><i class="fas fa-user-shield"></i> <a href="/">Benim Hesabım</a></li>
+            <li><i class="fa fa-power-off"></i> <a href="/Account/Login">Giriş</a></li>
+            <li><i class="fa fa-user-circle"></i> <a href="/Account/Register">Kayıt ol</a></li>
+        
+         }
+
+        
+     </ul>
+
+
+
+    </div>

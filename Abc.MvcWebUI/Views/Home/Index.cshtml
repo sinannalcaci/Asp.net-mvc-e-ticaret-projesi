@@ -1,0 +1,42 @@
+﻿@using Abc.MvcWebUI.Models;
+@model IEnumerable<ProductModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Bir Sepet Alışveriş Sitesine Hoşgeldiniz</h1>
+        <p class="lead">Aradığınız kaliteli ve şık tasarımlı modeller, indirimli fiyatlarla BirSepet.com'da</p>
+        <hr class="my-4">
+        <span></span><p>Süper Fiyat, Süper Teklif</p>
+        <a class="btn btn-primary btn-lg" href="/Home/List" role="button">Ürünleri İncelemek İçin Tıklayınız</a>
+    </div>
+</div>
+
+<div class="container pb-5">
+
+
+    @Html.Partial("_ProductList", Model)
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
